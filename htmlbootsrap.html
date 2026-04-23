@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Ghania</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0d1b2a, #000000);
+        color: white;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #4da6ff;
+        box-shadow: 0 0 20px rgba(0,0,255,0.6);
+    }
+
+    .highlight {
+        color: #4da6ff;
+        font-weight: bold;
+    }
+
+    /* GLASS CARD */
+    .glass {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 0 15px rgba(0,0,255,0.2);
+    }
+
+    /* TABLE */
+    table {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* LIST */
+    .list-lagu li {
+        background: rgba(0,0,225,0.2);
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 8px;
+        border-left: 4px solid #4da6ff;
+        transition: 0.3s;
+    }
+
+    .list-lagu li:hover {
+        background: rgba(0,0,225,0.5);
+        transform: translateX(8px);
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #4da6ff;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="nonton_wtl.jpeg">
+    <h1 class="mt-3">Ghania Fayyaza Siregar</h1>
+    <p>NIM: <span class="highlight">7243250005</span></p>
+    <p>Saya tertarik mengembangkan bisnis digital berupa aplikasi toko hewan dengan layanan konsultasi online dan klinik darurat.</p>
+</section>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <div class="glass mb-4">
+        <h3 class="section-title">Tentang Saya</h3>
+        <p class="text-center">
+            Hobi saya adalah <span class="highlight">melukis, bermain game, travelling</span> 
+            dan saya juga sangat menyukai musik terutama K-POP dari Enhypen.
+        </p>
+    </div>
+
+    <!-- TABLE -->
+    <div class="glass mb-4">
+        <h3 class="section-title">Member Enhypen</h3>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Posisi</th>
+                        <th>Umur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Yang Jungwon</td><td>Leader, Vokal</td><td>22</td></tr>
+                    <tr><td>Lee Heeseung</td><td>Vokal, Dance</td><td>24</td></tr>
+                    <tr><td>Park Jongseong</td><td>Rapper</td><td>23</td></tr>
+                    <tr><td>Sim Jaeyun</td><td>Rapper</td><td>23</td></tr>
+                    <tr><td>Park Sunghoon</td><td>Visual</td><td>23</td></tr>
+                    <tr><td>Kim Sunoo</td><td>Vokal</td><td>22</td></tr>
+                    <tr><td>Nishimura Riki</td><td>Main Dance</td><td>20</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- LIST LAGU -->
+    <div class="glass mb-4">
+        <h3 class="section-title">Lagu Favorit</h3>
+        <ul class="list-lagu list-unstyled">
+            <li>Intro Fate</li>
+            <li>Foreshadow</li>
+            <li>Moonstruck</li>
+            <li>Shout Out</li>
+            <li>Drunk-Dazed</li>
+            <li>Given-Taken</li>
+            <li>Go Big or Go Home</li>
+        </ul>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="glass mb-4">
+        <h3 class="section-title">MV Favorit</h3>
+        <div class="ratio ratio-16x9">
+            <video controls muted loop>
+                <source src="big_girlsmv.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
